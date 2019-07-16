@@ -56,12 +56,14 @@ history = model.fit(celsius_q, fahrenheit_a, epochs=500, verbose=False)
 model.predict([100.0])
 """
 
+''' another model with multiple layers
 l0 = tf.keras.layers.Dense(units=4, input_shape=[1])  
 l1 = tf.keras.layers.Dense(units=4)  
 l2 = tf.keras.layers.Dense(units=1)  
 model = tf.keras.Sequential([l0, l1, l2])
 model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(0.1))\
 print("These are the l2 variables: {}".format(l2.get_weights()))
+'''
 
 #display training statistics
 import matplotlib.pyplot as plt
